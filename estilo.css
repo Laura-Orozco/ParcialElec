@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #feecf461
+  }
+
+nav{
+    background-color: white;
+}
+
+.contenedor_me{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.zona-uno{
+    padding: 25px 0px 25px 0px;
+    background-color: rgb(56, 55, 55);
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo{
+    width: 150px;
+}
+
+.menu{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
+ 
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .search-container input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .search-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background-color: #ddd;
+    }
+    .seccion3{
+            gap: 10px;
+            display: left;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            
+           
+        }
+        .image-container {
+          position: relative; /* Necesario para posicionar el texto sobre la imagen */
+          width: 1050px;
+          max-width: 1000px; /* Puedes ajustar el tamaño máximo según necesites */
+      }
+
+      /* Imagen de fondo */
+      .image-container img {
+        width: 1050px;
+        height: auto; /* Mantiene la relación de aspecto de la imagen */
+          border-radius: 8px; /* Bordes redondeados, opcional */
+      }
+
+      /* Estilo del texto sobre la imagen */
+      .overlay-text {
+          position: absolute; /* Posiciona el texto sobre la imagen */
+          top: 50%; /* Centra el texto verticalmente */
+          left: 50%; /* Centra el texto horizontalmente */
+          transform: translate(-50%, -50%); /* Ajusta el texto para que esté perfectamente centrado */
+          color: white; /* Color del texto */
+          font-size: 2rem; /* Tamaño del texto */
+          font-weight: bold; /* Grosor del texto */
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+          text-align: center; /* Centra el texto */
+      }
+
+
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              width: 100%;
+              max-width: 1200px;
+          }
+          .left-column {
+            width: 100%;
+            max-width: 35%;
+            padding: 20px;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .right-column {
+          width: 100%;
+          max-width: 50%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 10px;
+          padding: 20px;
+      }
+
+      .right-column img {
+          width: calc(50% - 10px);
+          height: auto;
+          border-radius: 8px;
+      }
+      @media (max-width: 768px) {
+        .left-column, .right-column {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .right-column img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .full-screen-section {
+      height: 400px;  /* Altura completa de la ventana */
+      background-image: url('img/fonnn.jpg'); /* Cambia esto por la URL de tu imagen */
+      background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+      background-position: center;  /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+  }
+
+  /* Estilo para el contenido dentro de la sesión */
+
+
+  h1 {
+      font-size: 3rem;
+      margin: 0;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+        
+    /*pie de pagina*/
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+  
+      footer a {
+        color: #f1f1f1;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+  
+      footer a:hover {
+        color: #ff6347; /* Color cuando el usuario pasa el mouse */
+      }
+  
+      .social-links {
+        margin-top: 10px;
+      }
+  
+      .social-links a {
+        margin: 0 15px;
+        font-size: 24px;
+      }
+  
+      .social-links a:hover {
+        color: #ff6347;
+      }
+  
+      /* Responsividad */
+      @media (max-width: 768px) {
+        footer {
+          padding: 15px;
+        }
+  
+        .social-links a {
+          font-size: 20px;
+        }
+      }
